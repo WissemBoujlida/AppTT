@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">AppTT</string>
+
+    <string-array name="OfferType">
+        <item>Select..</item>
+        <item>Internet</item>
+        <item>Mobile</item>
+        <item>Fixe</item>
+    </string-array>
+
+</resources>

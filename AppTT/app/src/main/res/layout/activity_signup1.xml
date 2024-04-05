@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity1"
+    android:background="@drawable/background_theme"
+    >
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textColor="#ff0000" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="SignUp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/i_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="32dp"
+        android:hint="Email"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_email"
+            android:fontFamily="@font/poppinsmedium"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_warning_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_email"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#ff0000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@+id/i_email"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/i_username"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_username"
+            android:inputType="textPersonName"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppinsmedium"
+            android:id="@+id/et_username"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_warning_usr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/i_username"
+        android:layout_marginTop="4dp"
+        android:textColor="#ff0000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/i_username"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/i_password"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppinsmedium"
+            android:id="@+id/et_password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_warning_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/i_password"
+        android:layout_marginTop="4dp"
+        android:textColor="#ff0000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm password"
+        android:layout_below="@+id/i_password"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="32dp"
+        android:id="@+id/i_pwdconfirm"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppinsmedium"
+            android:id="@+id/et_pwdconfirm"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_warning_confirmPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_below="@+id/i_pwdconfirm"
+        android:layout_marginTop="4dp"
+        android:textColor="#ff0000" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_pwdconfirm"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="120dp"
+        android:background="@drawable/custom_btn"
+        android:backgroundTint="#0074d9"
+        android:drawableEnd="@drawable/ic_next"
+        android:fontFamily="@font/poppinsmedium"
+        android:text="next" />
+
+    <TextView
+        android:id="@+id/tv_notif_signmein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Have an account already ?" />
+
+    <TextView
+        android:id="@+id/tv_signmein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_next"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Log in" />
+
+    <ImageView
+        android:id="@+id/iv_TT"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/logo_tt" />
+
+</RelativeLayout>

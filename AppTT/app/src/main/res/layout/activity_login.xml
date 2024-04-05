@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/background_theme"
+    >
+
+    <ImageView
+        android:id="@+id/iv_FB"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="110sp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:src="@drawable/fb_logo"
+        android:focusable="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_TW"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="180sp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:src="@drawable/tw_logo" />
+
+    <ImageView
+        android:id="@+id/iv_YT"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="215sp"
+        android:layout_marginTop="100dp"
+        android:clickable="true"
+        android:src="@drawable/yt_logo" />
+
+    <ImageView
+        android:id="@+id/iv_WWW"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="250sp"
+        android:clickable="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/www_logo" />
+
+    <ImageView
+        android:id="@+id/iv_INS"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/btn_login"
+        android:layout_marginLeft="145sp"
+        android:clickable="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/ins_logo" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff0000" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginTop="245dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/i_usr">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_username"
+            android:inputType="text"
+            android:fontFamily="@font/poppinsmedium"
+            android:id="@+id/et_usr"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/i_usr"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:id="@+id/i_pwd"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_password"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppinsmedium"
+            android:id="@+id/et_pwd"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_pwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#0074d9"
+        android:gravity="center"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tv_notifSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Don't have an account ?" />
+
+    <TextView
+        android:id="@+id/tv_signMeUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="Sign up" />
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:gravity="center"
+        android:text="All rights reserved - portfolio-wissem.w3spaces.com" />
+
+    <ImageView
+        android:id="@+id/iv_TT"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/logo_tt" />
+
+    <TextView
+        android:id="@+id/tv_restPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i_pwd"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:fontFamily="@font/poppinsbold"
+        android:gravity="center"
+        android:text="forgot your password ?"
+        android:textSize="12dp" />
+
+</RelativeLayout>
